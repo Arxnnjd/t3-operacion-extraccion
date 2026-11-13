@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T3 - Operación Extracción</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- interfaz en la pantalla -->
+    <div id="hud">
+        <div id="crosshair">+</div>
+        <div id="mensaje-estado"></div>
+        
+        <!-- la barra de Vida del Jugador -->
+        <div id="health-container">
+            <span>Salud: </span>
+            <div id="health-bar-bg">
+                <div id="health-bar">100%</div>
+            </div>
+        </div>
+
+        <div id="info">
+            <p>Arma: <span id="weapon-name">Pistola tactica</span></p>
+            <p>Munición: <span id="ammo-count">12</span></p>
+        </div>
+    </div>
+
+    <!-- Pantalla de inicio -->
+    <div id="instructions">
+        <h1>OPERACIÓN EXTRACCIÓN</h1>
+        <p>Haz clic para comenzar</p>
+        <p><b>W, A, S, D:</b> Moverse | <b>Mouse:</b> Mirar | <b>Clic:</b> Disparar</p>
+        <p><b>1 y 2:</b> Cambiar arma | Explora el bunker extendido y llega a la zona segura</p>
+    </div>
+
+    <!-- three.js y addons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/PointerLockControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+    <!-- script principal -->
+    <script src="main.js"></script>
+</body>
+</html>
